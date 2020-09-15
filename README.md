@@ -1,7 +1,3 @@
-![InvoiceNet Logo](_images/logo.png)
-
---------------------------------------------------------------------------------
-
 Deep neural network to extract intelligent information from invoice documents.
 
 **TL;DR**
@@ -10,53 +6,6 @@ Deep neural network to extract intelligent information from invoice documents.
 * Train custom models using the Trainer UI on your own dataset.
 * Add or remove invoice fields as per your convenience.
 * Save the extracted information into your system with the click of a button.
-
-:star: We appreciate your star, it helps!
-
-The InvoiceNet logo was designed by [Sidhant Tibrewal](https://www.linkedin.com/in/sidhant-tibrewal-864058148/).
-[Check out](https://www.behance.net/tiber_sid) his work for some more beautiful designs.
-
----
-
-![InvoiceNet](_images/invoicenet.png)
-
----
-
-**DISCLAIMER**: 
-
-Pre-trained models for some general invoice fields are not available right now but will soon be provided.
-The training GUI and data preparation scripts have been made available.
-
-Invoice documents contain sensitive information because of which collecting a sizable dataset has proven to be difficult.
-This makes it difficult for developers like us to train large-scale generalised models and make them available to the community.
-
-If you have a dataset of invoice documents that you are comfortable sharing with us, please reach out (<sarthakmittal2608@gmail.com>).
-We have the tools to create the first publicly-available large-scale invoice dataset along with a software platform for structured information extraction.
-
----
-
-## Installation
-
-#### Ubuntu 18.04
-
-To install InvoiceNet on Ubuntu 18.04, run the following commands:
-
-```bash
-git clone https://github.com/naiveHobo/InvoiceNet.git
-cd InvoiceNet/
-
-# Run installation script
-./install.sh
-```
-
-The install.sh script will install all the dependencies, create a virtual environment, and install InvoiceNet in the virtual environment.
-
-To be able to use InvoiceNet, you need to source the virtual environment that the package was installed in.
-
-```bash
-# Source virtual environment
-source env/bin/activate
-```
 
 #### Windows 10
 
@@ -76,14 +25,6 @@ pip install .
 # Install poppler
 conda install -c conda-forge poppler
 ```
-
-Some dependencies also need to be installed separately on Windows 10 before running InvoiceNet:
-
-- [Tesseract 5.0.0](https://github.com/UB-Mannheim/tesseract/wiki)
-- [ImageMagick 7.0.10](https://imagemagick.org/script/download.php#windows)
-- [Ghostscript 9.52](https://www.ghostscript.com/download/gsdnld.html)
-
-
 
 ## Data Preparation
 The training data must be arranged in a single directory. The invoice documents are expected be PDF files and each invoice is expected to have a corresponding JSON label file with the same name. Your training data should be in the following format:
